@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/xglobal.css">
+    <link rel="stylesheet" href="./css/hamburger.min.css">
+    <link rel="stylesheet" href="./css/qglobal.css">
+</head>
+<body>
+<header class="position-relative">
+    <div id="headerPopup" class="xheader-popup-display">
+        <section class="xheader-desktop-popup d-flex flex-column">
+            <div class="d-flex align-items-center w-100">
+                <h3 class="xheader-popup-h">Выбор города</h3>
+                <div class="position-relative xheader-input-container-popup">
+                    <img class="xheader-popup-zoom" src="./img/header-input-zoom.png" alt="">
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <div id="headerPopupCloseButton" class="xheader-popup-close">
+                </div>
+            </div>
+            <div class="xheader-popup-li d-flex">
+                <div>
+                    <ul>
+                        <li>Киев</li>
+                        <li>Харьков</li>
+                        <li>Одесса</li>
+                        <li>Днепр</li>
+                        <li>Донецк</li>
+                        <li>Запорожье</li>
+                        <li>Львов</li>
+                        <li>Кривой Рог</li>
+                        <li>Николаев</li>
+                        <li>Мариуполь</li>
+                        <li>Луганск</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Винница</li>
+                        <li>Макеевка</li>
+                        <li>Севастополь</li>
+                        <li>Симферополь</li>
+                        <li>Херсон</li>
+                        <li>Полтава</li>
+                        <li>Чернигов</li>
+                        <li>Черкассы</li>
+                        <li>Житомир</li>
+                        <li>Сумы</li>
+                        <li>Хмельницкий</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Черновцы</li>
+                        <li>Горловка</li>
+                        <li>Ровно</li>
+                        <li>Каменское</li>
+                        <li>Кропивницкий</li>
+                        <li>Ивано-Франковск</li>
+                        <li>Кременчуг</li>
+                        <li>Тернополь</li>
+                        <li>Луцк</li>
+                        <li>Белая</li>
+                        <li>Церковь</li>
+                        <li>Мелитополь</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Никополь</li>
+                        <li>Славянск</li>
+                        <li>Ужгород</li>
+                        <li>Бердянск</li>
+                        <li>Павлоград</li>
+                        <li>Северодонецк</li>
+                        <li>Лисичанск</li>
+                        <li>Каменец-Подольский</li>
+                        <li>Бровары</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="xheader-desktop">
+        <section class="wrapper">
+            <div class="xheader d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="xheader-xlogo mr-5">
+                        <img src="./img/header-banner.png" alt="">
+                    </div>
+                    <div class="xheader-xphone">
+                        <div class="xheader-xnumber d-flex align-items-center mb-2">
+                            <img src="./img/phone-icon.png" class="xheader-phone__iconsize mr-1" alt="">
+                            <p class="xheader-phone__text">38 (067) 943-76-57</p>
+                        </div>
+                        <div class="xheader-xnumber d-flex align-items-center mt-2">
+                            <img src="./img/phone-icon.png" class="xheader-phone__iconsize mr-1" alt="">
+                            <p class="xheader-phone__text">38 (067) 943-76-57</p>
+                        </div>
+                    </div>
+                    <div class="xheader-xdropdown d-flex" id="headerLocation">
+                        <img src="./img/location-icon.png" class="xlocation-icon" alt="">
+                        <p>Киев</p>
+                        <img src="./img/dropdown-icon.png" class="xdropdown-icon" alt="">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ml-auto">
+                    <!--            Вход/Регистрация-->
+                    <a href="lot-create.html">
+                        <div class="xheader-xaddlot">Добавить лот</div>
+                    </a>
+                    <div class="xheader-xcabinet d-flex">
+                        <div class="xheader-xfavourite d-flex flex-column">
+                            <img src="./img/header-heart.png" class="mb10 xheader-heart" alt="">
+                            <p>Избранное</p>
+                        </div>
+                        <div class="xheader-border"></div>
+                        <div class="xheader-xprofile d-flex flex-column">
+                            <img src="./img/header-person.png" class="mb10 xheader-person" alt="">
+                            <p>Мой профиль</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="w-100 xheader-wrap">
+            <section class="wrapper d-flex justify-content-between align-items-center h-100">
+                <p class="xheader-links active-link">Главная</p>
+                <p class="xheader-links">О клубе</p>
+                <p class="xheader-links">Акции</p>
+                <p class="xheader-links">Заемщику</p>
+                <p class="xheader-links">Инвестору</p>
+                <p class="xheader-links">Партнерам</p>
+                <p class="xheader-links">Информация</p>
+                <p class="xheader-links">Контакты</p>
+                <div class="position-relative xheader-input-container">
+                    <img src="./img/header-input-zoom.png" alt="">
+                    <input type="text" placeholder="Поиск">
+                </div>
+            </section>
+        </div>
+        <div class="w-100 xheader-banner">
+        </div>
+    </div>
+    <section class="w-100 xheader-mobile">
+        <button class="hamburger hamburger--vortex" id="hamburgerButton" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+        </button>
+        <div class="position-relative xheader-input-container-mobile">
+            <img src="./img/header-input-zoom.png" alt="">
+            <input type="text" placeholder="Поиск">
+        </div>
+        <img src="./img/header-mobile-settings.png" alt="">
+        <img src="./img/header-mobile-person.png" class="xheader-mobile-person" alt="">
+    </section>
+</header>
+
+<div class="qnavgation row wrapper">
+    <a class="qblue" href="#">Главная</a>
+    <span> > </span>
+    <a class="" href="#">Избранное</a>
+</div>
+
+<div class="wrapper qfavourites px16">
+
+    <h1>Избранное </h1>
+
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот № 1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qhomepage-lot d-flex mb20">
+        <div class="qhomepage-lot__photo">
+            <img src="img/sleeping-cat.png" alt="">
+            <!--            ПОКАЗАТЬ ЭТОТ SPAN КОГДА ЛОТ СО СТАТУСОМ ТОП-->
+            <span>Топ</span>
+        </div>
+        <div class="qhomepage-lot__desc flex-grow-1 d-flex flex-column">
+            <div class="qbasic-info d-none d-sm-flex justify-content-between">
+                <div>
+                    <h2 style="color: #1A5BAF">Лот №1</h2>
+                </div>
+                <div class="d-flex align-items-center cursor-pointer">
+                    <p class="" style="color: #DB291D; font-size: 18px;">Удалить</p>
+                </div>
+            </div>
+            <div class="qdetailed-info d-flex flex-grow-1 align-items-center justify-content-between">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2>Ночной клуб</h2>
+                    <h3 class="d-none d-sm-block mb-0">Петр Алексеевич</h3>
+                </div>
+                <div class="d-flex flex-column h-100 justify-content-between text-right">
+                    <h2>$ 30 000</h2>
+                    <h3 class="d-none d-sm-block mb-0">Залог: 1 500 USD</h3>
+                </div>
+            </div>
+            <div class="qadditional-info d-flex d-sm-none justify-content-between flex-grow-1">
+                <div>
+                    <p>Срок: 24 месяцев</p>
+                </div>
+                <div>
+                    <p>Ставка: 20%</p>
+                </div>
+            </div>
+            <div class="qsecondary-info d-flex d-sm-none justify-content-between flex-grow-1 mt-2">
+                <div class="d-flex align-items-end">
+                    <h3>24.05.2020</h3>
+                </div>
+                <div class="d-flex align-items-end">
+                    <h3 style="color: #DB291D; font-size: 16px;">Удалить</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="w-100 xfooter-bg">
+        <section class="wrapper xfooter-wrapper">
+            <div class="xfooter-top d-flex justify-content-between">
+                <div class="xfooter-logo">
+                    <img src="./img/header-banner-white.png" alt="">
+                </div>
+                <div class="xfooter-nav1">
+                    <ul>
+                        <li class="xfooter-li">Главная</li>
+                        <li class="xfooter-li">О клубе</li>
+                        <li class="xfooter-li">Акции</li>
+                        <li class="xfooter-li">Заемщику</li>
+                    </ul>
+                </div>
+                <div class="xfooter-nav2">
+                    <ul>
+                        <li class="xfooter-li">Инвестору</li>
+                        <li class="xfooter-li">Партнерам</li>
+                        <li class="xfooter-li">Информация</li>
+                        <li class="xfooter-li">Контакты</li>
+                    </ul>
+                </div>
+                <div class="xfooter-contacts">
+                    <ul>
+                        <li class="xfooter-li d-flex align-items-center">
+                            <img src="./img/footer-phone-icon.png" class="xfooter-contacts-phone" alt="">
+                            <p>38 (095) 923-56-17</p>
+                        </li>
+                        <li class="xfooter-li d-flex align-items-center">
+                            <img src="./img/footer-phone-icon.png" class="xfooter-contacts-phone" alt="">
+                            <p>38 (095) 923-56-17</p>
+                        </li>
+                        <li class="xfooter-li d-flex align-items-center">
+                            <img src="./img/footer-email-icon.png" class="xfooter-contacts-phone" alt="">
+                            <p>infobroker@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="xfooter-social-networks">
+                    <div class="">
+                        <p class="xfooter-wearesocial">Мы в соцсетях</p>
+                        <div class="xfooter-social-links">
+                            <img src="./img/footer-vk.png" alt="">
+                            <img class="xfooter-facebook" src="./img/footer-facebook.png" alt="">
+                            <img src="./img/footer-instagram.png" alt="">
+                        </div>
+                    </div>
+                    <div class="xfooter-phonecall-border">
+                        <p class="xfooter-phonecall">Заказать обратный звонок</p>
+                    </div>
+                </div>
+            </div>
+            <div class="xfooter-border-bottom">
+            </div>
+            <div>
+                <p class="xfooter-all-rights">© BrokerFucker - все права защищены, 2020</p>
+            </div>
+        </section>
+    </div>
+    <div class="w-100 xfooter-bg-mobile d-flex flex-column">
+        <div class="xfooter-top-mobile d-flex">
+            <div>
+                <div class="xfooter-logo xfooter-logo-mobile">
+                    <img src="./img/header-banner-white.png" alt="">
+                </div>
+                <div class="">
+                    <p class="xfooter-wearesocial">Мы в соцсетях</p>
+                    <div class="xfooter-social-links xfooter-social-links-mobile">
+                        <img src="./img/footer-vk.png" alt="">
+                        <img class="xfooter-facebook xfooter-facebook-mobile" src="./img/footer-facebook.png" alt="">
+                        <img src="./img/footer-instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="xfooter-contacts-container">
+                <div class="xfooter-contacts d-flex flex-column h-100">
+                    <ul class="mb-auto">
+                        <li class="xfooter-li xfooter-li-mobile d-flex align-items-center">
+                            <img src="./img/footer-phone-icon.png" class="xfooter-contacts-phone" alt="">
+                            <p>38 (095) 923-56-17</p>
+                        </li>
+                        <li class="xfooter-li d-flex align-items-center">
+                            <img src="./img/footer-phone-icon.png" class="xfooter-contacts-phone" alt="">
+                            <p>38 (095) 923-56-17</p>
+                        </li>
+                        <li class="xfooter-li d-flex align-items-center">
+                            <img src="./img/footer-email-icon.png" class="xfooter-contacts-phone" alt="">
+                            <p>infobroker@gmail.com</p>
+                        </li>
+                    </ul>
+                    <div class="xfooter-phonecall-border align-self-end">
+                        <p class="xfooter-phonecall">Заказать звонок</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xfooter-border-bottom">
+        </div>
+        <div class="xfooter-bottom-mobile">
+            <div>
+                <p class="xfooter-all-rights">© BrokerFucker - все права защищены, 2020</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<section id="hamburgerMenu" class="xburger-menu position-fixed overflow-hidden">
+    <div class="h-100 overflow-auto xburger-wrapper">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="./img/header-heart-white.png" alt="">
+                <p class="ml-2 text-white">Избранное</p>
+            </div>
+            <img src="./img/burger-close.png" id="hamburgerClose" alt="">
+        </div>
+        <div class="xburger-border"></div>
+        <div>
+            <ul>
+                <li>Главная</li>
+                <li>О клубе</li>
+                <li>Акции</li>
+                <li>Заемщику</li>
+                <li>Инвестору</li>
+                <li>Партерам</li>
+                <li>Информация</li>
+                <li>Контакты</li>
+                <a href="feed.html">
+                    <li>Новости</li>
+                </a>
+            </ul>
+        </div>
+        <div class="xburger-border xburger-margin"></div>
+        <div class="d-flex flex-column">
+            <div class="d-flex">
+                <img src="./img/header-banner-white-small.png" alt="">
+                <div id="hamburgerCity" class="xheader-xdropdown d-flex align-self-center">
+                    <img src="./img/location-icon-white.png" class="xlocation-icon xburger-location-size" alt="">
+                    <p class="xburger-city-p mr-1">Киев</p>
+                    <img src="./img/dropdown-icon-white.png" class="xdropdown-icon" alt="">
+                </div>
+            </div>
+            <div class="xheader-xphone xheader-xphone-mobile">
+                <div class="xheader-xnumber d-flex align-items-center mb-2">
+                    <img src="./img/phone-icon-white.png" class="xheader-phone__iconsize mr-1" alt="">
+                    <p class="xheader-phone__text xheader-phone__text-mobile">38 (067) 943-76-57</p>
+                </div>
+                <div class="xheader-xnumber d-flex align-items-center mt-2">
+                    <img src="./img/phone-icon-white.png" class="xheader-phone__iconsize mr-1" alt="">
+                    <p class="xheader-phone__text xheader-phone__text-mobile">38 (067) 943-76-57</p>
+                </div>
+            </div>
+            <div class="xburger-login">
+                <p class="xburger-login__text">Вход / Регистрация</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="hamburgerCityBlock" class="xburger-city position-fixed overflow-hidden">
+    <div class="xburger-city-wrapper overflow-auto">
+        <div class="d-flex align-items-center">
+            <img id="hamburgerCityClose" src="./img/burger-city-arrow.png" class="xburger-arrow-close" alt="">
+            <div class="position-relative xheader-input-container-burger">
+                <img src="./img/header-input-zoom.png" alt="">
+                <input type="text" placeholder="Поиск города">
+            </div>
+        </div>
+        <div class="d-flex justify-content-between xburger-cites-container">
+            <div class="xburger-cites">
+                <div class="xburger-city-active">Киев</div>
+                <div>Харьков</div>
+                <div>Одесса</div>
+                <div>Днепр</div>
+                <div>Запорожье</div>
+                <div>Львов</div>
+                <div>Кривой</div>
+                <div>Рог</div>
+                <div>Николаев</div>
+                <div>Мариуполь</div>
+                <div>Луганск</div>
+                <div>Черновцы</div>
+                <div>Горловка</div>
+                <div>Ровно</div>
+                <div>Кропивницкий</div>
+                <div>Ивано-Франковск</div>
+                <div>Кременчуг</div>
+                <div>Тернополь</div>
+                <div>Луцк</div>
+                <div>Белая</div>
+                <div>Церковь</div>
+            </div>
+            <div class="xburger-cites">
+                <div>Винница</div>
+                <div>Макеевка</div>
+                <div>Севастополь</div>
+                <div>Симферополь</div>
+                <div>Херсон</div>
+                <div>Полтава</div>
+                <div>Чернигов</div>
+                <div>Черкассы</div>
+                <div>Житомир</div>
+                <div>Сумы</div>
+                <div>Хмельницкий</div>
+                <div>Никополь</div>
+                <div>Славянск</div>
+                <div>Ужгород</div>
+                <div>Бердянск</div>
+                <div>Павлоград</div>
+                <div>Северодонецк</div>
+                <div>Лисичанск</div>
+                <div>Каменец-Подольский</div>
+                <div>Бровары</div>
+                <div>Мелитополь</div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="./js/bundle.js"></script>
+</body>
+</html>

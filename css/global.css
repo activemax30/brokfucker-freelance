@@ -1,0 +1,462 @@
+/*ВРАППЕР WRAPPER*/
+
+* {
+    font-family: "SF Pro Display", sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+* {
+    outline: none !important;
+    /*zoom: 0.97;*/
+}
+::selection {
+    background: rgba(26, 91, 175, 0.1);
+}
+body {
+    zoom: 0.8;
+    -ms-zoom: 0.8;
+    -webkit-zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+}
+body {
+    /*-moz-transform: scale(0.8);*/
+    /*-moz-transform-origin: center;*/
+}
+
+.wrapper {
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.mt30 {
+    margin-top: 30px !important;
+}
+.mt25 {
+    margin-top: 25px !important;
+}
+.mt15 {
+    margin-top: 15px !important;
+}
+.mb10 {
+    margin-bottom: 10px !important;
+}
+.mr30 {
+    margin-right: 30px !important;
+}
+.mb20 {
+    margin-bottom: 20px !important;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.mr10 {
+    margin-right: 10px !important;
+}
+.mr100 {
+    margin-right: 100px !important;
+}
+
+.padding20 {
+    padding: 20px !important;
+}
+.padding30 {
+    padding: 30px !important;
+}
+.ml10 {
+    margin-left: 10px !important;
+}
+
+.ml30 {
+    margin-left: 30px !important;
+}
+.mr15 {
+    margin-right: 15px !important;
+}
+.ml15 {
+    margin-left: 15px !important;
+}
+.mx15 {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mr20 {
+    margin-right: 20px !important;
+}
+.qcolorblue {
+    color: #0D6DE8;
+}
+.qcolorred {
+    color: #ED5E42;
+}
+.qcolorblack {
+    color: #282828;
+}
+.custom-grey-border {
+    border-bottom: 1px solid #DADADA !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.user-cant-select {
+    user-select: none;
+}
+.xpayment-cc {
+    padding: 30px;
+}
+
+/*custom radio button start*/
+
+/* The container */
+.qradio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.qradio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.qcheckmark {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #DADADA;
+}
+
+.qvalue {
+    color: #909090;
+    white-space: nowrap;
+}
+
+/* On mouse-over, add a grey background color */
+/*.qradio-container:hover input ~ .qcheckmark {*/
+/*    background-color: #ccc;*/
+/*}*/
+
+/*When the radio button is checked, add a blue border */
+.qradio-container input:checked ~ .qcheckmark {
+    border: 2px solid #0D6DE8;
+}
+
+.qradio-container input:checked ~ .qvalue {
+    color: #0D6DE8;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.qcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.qradio-container input:checked ~ .qcheckmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.qradio-container .qcheckmark:after {
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0D6DE8;
+}
+
+/*custom radio button end*/
+
+/*---------------------------------------------------*/
+
+/*custom checkbox start*/
+
+/* The container */
+.qcheckbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-right: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.qcheckbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.qccheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
+    border: 1px solid #909090;
+}
+
+
+/* On mouse-over, add a grey background color */
+/*.qcheckbox-container:hover input ~ .qccheckmark {*/
+/*    background-color: #ccc;*/
+/*}*/
+
+/* When the checkbox is checked, add a blue background */
+.qcheckbox-container input:checked ~ .qccheckmark {
+    background-color: #0D6DE8;
+    border: none;
+}
+
+.qcheckbox-container input:checked ~ .qcvalue {
+    color: #0D6DE8;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.qccheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.qcheckbox-container input:checked ~ .qccheckmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.qcheckbox-container .qccheckmark:after {
+    left: 8px;
+    top: 2px;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*custom checkbox end*/
+
+/*===============================================*/
+
+/*custom select start*/
+
+/* The container must be positioned relative: */
+.custom-selectjs {
+    position: relative;
+}
+
+.custom-selectjs select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #ffffff;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 14px;
+    height: 8px;
+    background: url("../img/arrow-down-icon-black.svg") no-repeat center/100% 100%;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    transform: rotate(180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #282828;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    color: #1A5BAF !important;
+}
+
+/*custom select end*/
+
+/*ПАГИНАТОР НАЧАЛО*/
+
+.qglobal-pagination nav ul li {
+    margin-right: 10px;
+}
+.qglobal-pagination nav ul li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #282828;
+}
+
+/*<!--    ПАГИНАТОР КОНЕЦ-->*/
+
+
+.qmodal-club {
+    width: 295px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+    padding: 20px;
+}
+.qmodal-club div button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: none;
+    border: none;
+}
+.qmodal-club div p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #282828;
+}
+.qmodal-club div button img {
+    width: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width: 1120px) {
+    .qcheckbox-container {
+        /*font-size: 18px;*/
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .qradio-container {
+        font-size: 18px;
+    }
+
+    .qcheckbox-container {
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .px16 {
+        /*padding: 0 16px !important;*/
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .m0m {
+        margin: 0 !important;
+    }
+    .mb20m {
+        margin-bottom: 20px !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    .w-100xs {
+        width: 100%;
+    }
+}
+
+.xnav-indexs {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    opacity: 80%;
+    z-index: 9999999999;
+}
+
+/*.qhomepage-lot {*/
+/*    align-items: center;*/
+/*}*/
+/*.qhomepage-lot .qhomepage-lot__photo {*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+/*@media screen and (max-width: 575px) {*/
+/*    .qhomepage-lot {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*    .qhomepage-lot .qhomepage-lot__photo {*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*        max-width: unset !important;*/
+/*        height: unset !important;*/
+/*    }*/
+/*}*/

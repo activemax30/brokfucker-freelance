@@ -1,0 +1,1888 @@
+
+
+/*ГЛОБАЛЬНЫЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.profileUserEditBlock {
+    display: none;
+}
+
+
+.qnavgation {
+    margin-top: 20px;
+}
+
+.qnavgation a {
+    color: unset;
+}
+
+.qnavgation a.qblue {
+    color: #1A5BAF;
+}
+
+.qnavgation span {
+    margin: 0 10px;
+    color: #1A5BAF;
+}
+
+
+.qglobalpagemenu {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.qglobalpagemenu a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #1A5BAF;
+    text-decoration: none;
+    width: 230px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 46px;
+    padding-left: 30px;
+}
+
+.qglobalpagemenu a.qglobalpagemenu__current {
+    color: #282828;
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+
+
+.qglobalpageselect {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.qglobalpageselect select {
+    height: 46px;
+    background-image: none;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    border: none;
+}
+
+.qglobalpageselect:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 14px;
+    height: 8px;
+    background: url("../img/arrow-down-icon.svg") no-repeat center/100% 100%;
+}
+
+
+
+/*=================================================*/
+
+/*СОЗДАТЬ ЛОТ LOTDETAILS НАЧАЛО*/
+
+.lotdetails {
+    margin: 30px auto 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.lotdetails-mobile-carousel {
+    /*margin-bottom: 56px;*/
+}
+.lotdetails-mobile-carousel p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #282828;
+}
+.lotdetails-mobile-carousel button {
+    border: 1px solid #1A5BAF;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1A5BAF;
+    padding: 0 40px;
+}
+.lotdetails-mobile-carousel .photo-list {
+    overflow: scroll;
+}
+.lotdetails-mobile-carousel .photo-list > div {
+    border-radius: 8px;
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.lotdetails-mobile-carousel .photo-list > div:last-child {
+    margin-right: 0 !important;
+}
+.lotdetails-mobile-carousel .photo-list > div img {
+    width: 100%;
+}
+.lotdetails-mobile-carousel .carousel .carousel-indicators {
+    bottom: -60px;
+}
+.lotdetails-mobile-carousel .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #1A5BAF;
+    background-color: #ffffff;
+    opacity: unset;
+}
+.lotdetails-mobile-carousel .carousel .carousel-indicators li.active {
+    background-color: #1A5BAF;
+}
+.lotdetails-mobile-carousel .carousel .carousel-inner .carousel-item {
+}
+.lotdetails-mobile-carousel .carousel .carousel-inner .carousel-item .qimage-cover {
+    border-radius: 8px;
+    max-height: 139px;
+    max-width: 249px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.lotdetails-form {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.lotdetails .lotdetails-form h1 {
+    font-size: 24px;
+    font-family: "SF Pro Display", sans-serif;
+    color: #000000;
+    padding-bottom: 30px;
+    margin: 0;
+    border-bottom: 1px solid #DADADA;
+}
+
+/*gallery start*/
+.lotdetails .lotdetails-form .lotdetails-form__gallery {
+    margin-top: 30px;
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row {
+    margin-bottom: 20px;
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row .col {
+    margin-bottom: 20px;
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row .qimgitem {
+    height: 139px;
+    width: 100%;
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row .qimgitem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row .qcameraitem {
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row .qcameraitem div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 139px;
+    width: 100%;
+    background: #F2F4F5;
+    border-radius: 8px;
+}
+
+.lotdetails .lotdetails-form .lotdetails-form__gallery .row .qcameraitem img {
+    height: 40px;
+    width: 40px;
+}
+
+/*gallery end*/
+
+/*name-price start*/
+.lotdetails-form__nameprice {
+
+}
+
+.lotdetails-form__nameprice .qinputs {
+
+}
+.error-message {
+    bottom: -20px;
+    left: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DE1609;
+}
+.lotdetails-form__nameprice .qinputs .col label {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.lotdetails-form__nameprice .qinputs .col input {
+}
+.lotdetails-form__nameprice .qinputs .col .custom-selectjs {
+
+}
+.lotdetails-form__nameprice .qinputs .col .custom-selectjs .select-selected {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #DADADA;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #282828;
+}
+.qglobalpageinput {
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 18px;
+    color: #909090;
+    padding-left: 20px;
+}
+
+.lotdetails-form__nameprice .qcurrency {
+    /*margin: 30px 0;*/
+    /*border-bottom: 1px solid #DADADA;*/
+}
+
+.lotdetails-form__nameprice .qcurrency label {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.lotdetails-form__nameprice .qcurrency .qradios label {
+    /*padding-right: 100px;*/
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.lotdetails-form__nameprice .qcurrency .qradios label {
+
+}
+
+.lotdetails-form__nameprice .qdescription {
+
+}
+
+.lotdetails-form__nameprice .qdescription label {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+}
+
+.lotdetails-form__nameprice .qdescription textarea {
+    resize: none;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 17px 20px;
+    color: #909090;
+}
+
+.lotdetails-form__nameprice .qtype {
+    margin: 30px 0 20px;
+    border-bottom: 1px solid #DADADA;
+}
+.qqwestion {
+    position: absolute;
+    right: -25px;
+    top: -15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #0D6DE8;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    padding: 1px 7px;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.qcustom-popover {
+    right: -325px;
+    top: -140px;
+    display: none;
+    width: 295px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+    padding: 20px;
+    color: #282828;
+    font-size: 18px;
+    background-image: url("../img/header-popup-close.png");
+    background-repeat: no-repeat;
+    background-position: 98% 6px;
+    background-size: 12px;
+}
+.lotdetails-form__nameprice .qtype label {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+.lotdetails-form__nameprice .qbuttons {
+    padding-top: 10px;
+}
+
+.lotdetails-form__nameprice .qbuttons button {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    line-height: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+.lotdetails-form__nameprice .qbuttons button.qsave {
+    margin-right: 15px;
+    border: 1px solid #0D6DE8;
+    color: #0D6DE8;
+}
+
+.lotdetails-form__nameprice .qbuttons button.qpublish {
+    margin-left: 15px;
+    background: #0D6DE8;
+    color: #FFFFFF;
+}
+
+/*name-price end*/
+
+/*СОЗДАТЬ ЛОТ LOTDETAILS КОНЕЦ*/
+
+/*=====================================================*/
+
+/*ГЛАВНАЯ СТРАНИЦА INDEX НАЧАЛО*/
+
+.qhomepage {
+    margin-bottom: 60px;
+}
+
+.qmobilefilters {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    padding: 20px 16px;
+}
+.qmobilefilters .filter-head {
+    border-bottom:  1px solid #DADADA;
+    padding-bottom: 20px;
+}
+.qmobilefilters .filter-head p {
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+}
+.qmobilefilters .filter-head button {
+    background: none;
+    border: none;
+}
+.qmobilefilters .filter-sortby {
+
+}
+.qmobilefilters .filter-sortby .qcheckbox-container .qcvalue {
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.qmobilefilters .filter-sortby .qcheckbox-container input:checked ~ .qcvalue {
+    border: 1px solid #0D6DE8;
+}
+.qmobilefilters .filter-price {
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+}
+.qmobilefilters .filter-price p {
+    color: #282828;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.qmobilefilters .filter-price .filter-input {
+    position: relative;
+}
+.qmobilefilters .filter-price .filter-input:first-child:before {
+    content: 'от';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    z-index: 3;
+}
+.qmobilefilters .filter-price .filter-input:last-child:before {
+    content: 'до';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    z-index: 3;
+}
+
+.qmobilefilters .filter-price input[type=number] {
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+    max-width: 110px;
+    margin-right: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+.qmobilefilters .filter-price button {
+    color: #1A5BAF;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #1A5BAF;
+}
+.qmobilefilters .filter-repayment {
+    padding-bottom: 20px;
+}
+.qmobilefilters .filter-repayment a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #282828;
+}
+.qmobilefilters .filter-assurance {
+    padding-bottom: 20px;
+}
+.qmobilefilters .filter-assurance a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #282828;
+}
+.qmobilefilters .filter-buttons {
+
+}
+.qmobilefilters .filter-buttons button {
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+}
+.qmobilefilters .filter-buttons button:first-child {
+    background: #0D6DE8;
+    color: #FFFFFF;
+}
+.qmobilefilters .filter-buttons button:last-child {
+    background: #F5F5F5;
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+    /*БЛОК СО СТАТИСТИКОЙ НАЧАЛО*/
+
+.qhomepage .qhomepage-stat {
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    margin: 30px 0;
+    padding: 30px;
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col {
+
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col .qimg {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #0D6DE8;
+    border-radius: 50%;
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col .qimg img {
+    width: 40px;
+    height: 40px;
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo {
+    margin-left: 20px;
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #282828;
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo h5 {
+    font-size: 18px;
+    color: #909090;
+}
+
+/*БЛОК СО СТАТИСТИКОЙ КОНЕЦ*/
+
+/*БЛОК С ФИЛЬТРАМИ НАЧАЛО*/
+
+.qhomepage .qhomepage-filters {
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__type {
+    position: relative;
+}
+.qhomepage .qhomepage-filters .qhomepage-filters__type .custom-selectjs{
+    margin-right: 16px;
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__type .qclear-filters {
+    /*margin-left: 16px;*/
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__type .qclear-filters button {
+    border: none;
+    background: none;
+    color: #1A5BAF;
+    font-size: 18px;
+    border-bottom: 1px solid #1A5BAF;
+    padding: 0;
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting {
+
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting > div > label {
+    font-size: 18px;
+    color: #000000;
+    line-height: 18px;
+    margin: 0 10px 0 0;
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting .dropdown > button {
+    width: 272px;
+    height: 40px;
+    text-align: left;
+    background: none;
+    color: #282828;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting .dropdown > button:after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting .dropdown .dropdown-menu {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting .dropdown .dropdown-menu form {
+}
+
+.qhomepage .qhomepage-filters .qhomepage-filters__sorting .dropdown .dropdown-menu form .qrange input {
+    position: relative;
+    width: 110px;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    padding-left: 30px;
+    color: #282828;
+    font-size: 16px;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qrange .qfrom:after {
+    content: 'от';
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qrange .qto:after {
+    content: 'до';
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qradios {
+
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qaccept {
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qaccept button {
+    color: #1A5BAF;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #1A5BAF;
+    padding: 0;
+    background: none;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qbypricetime {
+    border-bottom: 1px solid #DADADA;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qbypricetime label {
+    font-size: 18px;
+}
+
+.qhomepage-filters__sorting .dropdown .dropdown-menu form .qrepayment p {
+    color: #282828;
+    font-size: 18px;
+}
+
+.qhomepage-filters__sorting .qsortby .qcheckbox-container {
+    padding-left: 20px;
+}
+
+.qhomepage-filters__sorting .qsortby .qcheckbox-container .qcvalue {
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.qhomepage-filters__sorting .qsortby .qcheckbox-container input:checked ~ .qcvalue {
+    border: 1px solid #0D6DE8;
+}
+
+/*БЛОК С ФИЛЬТРАМИ КОНЕЦ*/
+
+/*БЛОК ШАБЛОН ЛОТА НАЧАЛО*/
+
+.qhomepage-lot {
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.qhomepage-lot.qnotmoderated {
+    padding-bottom: 35px;
+}
+.qhomepage-lot.qnotmoderated .qmoderstatus {
+    display: block;
+}
+.qhomepage-lot .qmoderstatus {
+    display: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #E66A61;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+.qhomepage-lot .qhomepage-lot__photo {
+    position: relative;
+    border-radius: 8px;
+    max-width: 370px;
+    max-height: 169px;
+    overflow: hidden;
+}
+
+.qhomepage-lot .qhomepage-lot__photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.qhomepage-lot .qhomepage-lot__photo span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0D6DE8;
+    border-radius: 8px;
+    width: 70px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.qhomepage-lot .qhomepage-lot__desc {
+    padding: 20px 20px 20px 30px;
+}
+
+.qhomepage-lot .qhomepage-lot__desc .qbasic-info {
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+}
+
+.qhomepage-lot .qhomepage-lot__desc h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #282828;
+    margin: 0;
+}
+
+.qhomepage-lot .qhomepage-lot__desc h3 {
+    color: #909090;
+    font-size: 18px;
+}
+
+.qhomepage-lot .qhomepage-lot__desc .qbasic-info p {
+    /*color: #0D6DE8;*/
+    font-size: 14px;
+    margin-right: 10px;
+    user-select: none;
+}
+.qhomepage-lot .qhomepage-lot__desc .qbasic-info p:hover {
+    color: #ED5E42;
+}
+
+.qhomepage-lot .qhomepage-lot__desc .qbasic-info img {
+    width: 20px;
+    height: 20px;
+}
+
+.qhomepage-lot .qhomepage-lot__desc .qdetailed-info {
+    margin-top: 10px;
+}
+.qhomepage-lot .qhomepage-lot__desc .qadditional-info p{
+    font-size: 14px;
+}
+.qhomepage-lot .qhomepage-lot__desc .qsecondary-info h3{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*БЛОК ШАБЛОН ЛОТА КОНЕЦ*/
+
+
+/*ПАРТНЕРЫ НАЧАЛО*/
+
+.qhomepage-partners {
+
+}
+
+.qhomepage-partners h2 {
+    font-size: 48px;
+}
+
+.qhomepage-partners .carousel-inner {
+    margin: 0 -20px;
+    padding: 0 20px;
+    width: auto;
+}
+
+.qhomepage-partners .carousel-item {
+    padding: 20px 0;
+}
+
+.qhomepage-partners .qsquare-block {
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    /*width: 270px;*/
+    height: 169px;
+}
+
+.qhomepage-partners .carousel-control-prev, .carousel-control-next {
+    top: calc(50% - 15px);
+    bottom: unset;
+    width: auto;
+    background: #1A5BAF;
+    opacity: unset;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.qhomepage-partners .carousel-control-next {
+    right: -60px;
+}
+
+.qhomepage-partners .carousel-control-prev {
+    left: -60px;
+}
+
+.qhomepage-partners .carousel-control-prev .qicon, .carousel-control-next .qicon {
+    width: 10px;
+    height: 10px;
+}
+
+/*ПАРТНЕРЫ КОНЕЦ*/
+
+/*НОВОСТИ НАЧАЛО*/
+
+.qhomepage-news h2 {
+    font-size: 48px;
+}
+
+.qhomepage-news .qhomepage-news__items {
+    margin-top: 30px;
+
+}
+.qhomepage-news .qhomepage-news__items .qimgpart {
+    max-height: 225px;
+}
+
+.qhomepage-news .qhomepage-news__items .qtextpart {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+.qhomepage-news .qhomepage-news__items .qtextpart h3 {
+    font-size: 20px;
+    color: #282828;
+}
+
+.qhomepage-news .qhomepage-news__items .qtextpart p {
+    font-size: 16px;
+    color: #909090;
+    max-height: 69px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+}
+
+.qhomepage-news .qhomepage-news__items > div {
+    max-width: 380px;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+    flex-direction: column;
+}
+
+.qhomepage-news .qhomepage-news__items > div > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*НОВОСТИ КОНЕЦ*/
+
+/*ГЛАВНАЯ СТРАНИЦА INDEX КОНЕЦ*/
+
+
+/*СТРАНИЦА ПРОФИЛЬ НАЧАЛО*/
+
+.qprofile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px auto 50px;
+}
+.qprofile .qprofile-content {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 30px;
+}
+.qprofile .qprofile-content .qprofile-content__header {
+    position: relative;
+    margin-bottom: 30px;
+}
+.qprofile .qprofile-content .qprofile-content__header .qtitle p {
+    color: #000000;
+    font-size: 24px;
+    line-height: 24px;
+}
+.qprofile .qprofile-content .qprofile-content__header .qregdate p {
+    color: #909090;
+    line-height: 16px;
+}
+.qprofile .qprofile-content .qprofile-content__header .qlogoutbtn button {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #1A5BAF;
+    border: none;
+    background: none;
+}
+.qprofile .qprofile-content .qprofile-content__header .qlogoutbtn button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.qprofile .qprofile-content .qprofile-content__maininfo {
+    max-width: 525px;
+    border-top: 1px solid #DADADA;
+    padding-top: 30px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto {
+    margin-bottom: 30px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:first-child {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin-right: 20px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child p {
+    width: 141px;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 0 8px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child p.qinvestor {
+    background: #66B645;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child p.qborrower{
+    background: #FFC107;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child label {
+    background: none;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #909090;
+    font-size: 18px;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 39px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qdata {
+    border-top: 1px solid #DADADA;
+    padding-top: 30px;
+}
+.qprofile .profileUserEditBlock .qprofile-content .qprofile-content__maininfo .qdata div label {
+    color: #282828;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qdata div label {
+    color: #909090;
+}
+.qprofile .profileUserEditBlock .qprofile-content .qprofile-content__maininfo .qdata div input {
+    color: #909090;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qdata div input {
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    color: #282828;
+    font-size: 18px;
+}
+.qprofile .qprofile-content .qprofile-content__maininfo .qdata div .qconfirm button {
+    background: none;
+    border: none;
+    color: #1A5BAF;
+    border-bottom: 1px dotted #1A5BAF;
+    font-size: 18px;
+    padding: 0;
+    height: 35px;
+    margin-left: 25px;
+    white-space: nowrap;
+}
+
+
+.qprofile .qprofile-content .qprofile-content__footer {
+
+}
+.qprofile .qprofile-content .qprofile-content__footer button:first-child {
+    background: #1A5BAF;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px;
+}
+.qprofile .qprofile-content .qprofile-content__footer button:nth-child(2), button:nth-child(3) {
+    background: none;
+    border: none;
+    color: #DB291D;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*СТРАНИЦА ПРОФИЛЬ КОНЕЦ*/
+
+/*-----------------------------------*/
+
+/*СТРАНИЦА ДЕТАЛИ ЛОТА НАЧАЛО*/
+
+.qlotfullinfo {
+    padding-bottom: 50px;
+}
+.qlotfullinfo .qlotfullinfo-head-buttons {
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    padding: 10px 0;
+    margin: 30px 0;
+}
+.qlotfullinfo .qlotfullinfo-head-buttons .qfirst-button button {
+    background: #0D6DE8;
+    border-radius: 8px;
+    border: none;
+    padding: 0 55px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.qlotfullinfo .qlotfullinfo-head-buttons .qsecond-button button {
+    border: none;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #282828;
+}
+.qlotfullinfo .qlotfullinfo-head-buttons .qsecond-button span {
+    display: block;
+    border-right: 1px solid #282828;
+}
+.qlotfullinfo .qlotfullinfo-head {
+    margin-bottom: 30px;
+}
+.qlotfullinfo .qlotfullinfo-head div p {
+    color: #282828;
+    font-size: 48px;
+}
+.qlotfullinfo .qlotfullinfo-head div button {
+    background: #1A5BAF;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 196px;
+    padding: 11px 0;
+}
+
+.qlotfullinfo .qlotfullinfo-carousel {
+    margin-bottom: 30px;
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel {
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel > div > div div {
+    max-height: 440px;
+ }
+.qlotfullinfo .qlotfullinfo-carousel .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #1A5BAF;
+    opacity: unset;
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel .carousel-indicators li.active {
+    background: #1A5BAF;
+    border: 1px solid #FFFFFF;
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel .carousel-control-prev {
+    top: calc(50% - 15px);
+    bottom: unset;
+    background: #1A5BAF;
+    opacity: unset;
+    border-radius: 50%;
+    padding: 10px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel .carousel-control-prev .qicon {
+    background-image: url("../img/prev-white-icon.svg");
+    width: 10px;
+    height: 10px;
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel .carousel-control-next .qicon {
+    background-image: url("../img/next-white-icon.svg");
+}
+.qlotfullinfo .qlotfullinfo-carousel .carousel .carousel-control-next {
+    right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.qlotfullinfo .qlotfullinfo-description .row > div .qcolumn {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+
+.qlotmain-info {
+
+}
+.qlotmain-info > p {
+    color: #282828;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+}
+.qlotmain-info > div {
+    margin-top: 36px;
+}
+.qlotmain-info > div div {
+    border-bottom: 1px dashed #DADADA;
+    padding: 10px 0;
+}
+.qlotmain-info > div div p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.qlotmain-desc {
+    margin-top: 30px;
+}
+.qlotmain-desc > p {
+    color: #282828;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+}
+.qlotmain-desc > div p {
+    color: #282828;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.qbuttons-row {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #DADADA;
+}
+.qbuttons-row {
+
+}
+.qbuttons-row div:first-child button {
+    background: #0D6DE8;
+    border-radius: 8px;
+    border: none;
+    padding: 0 55px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.qbuttons-row div:last-child button {
+    border: none;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #282828;
+}
+.qbuttons-row div:last-child span {
+    display: block;
+    height: 20px;
+    border-right: 1px solid #282828;
+}
+.qbuttons-row button {
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+    /*max-width: 270px;*/
+    /*width: 100%;*/
+    /*border-radius: 8px;*/
+    /*font-size: 18px;*/
+}
+/*.qbuttons-row button:first-child {*/
+/*    background: #FFFFFF;*/
+/*    border: 1px solid #0D6DE8;*/
+/*    color: #0D6DE8;*/
+/*}*/
+/*.qbuttons-row button:last-child {*/
+/*    background: #0D6DE8;*/
+/*    border-radius: 8px;*/
+/*    color: #FFFFFF;*/
+/*    border: none;*/
+/*}*/
+.qbuttons-row.qcontanct {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.qbuttons-row.qcontanct button {
+    max-width: unset !important;
+    width: unset !important;
+}
+.qbuttons-row.qcontanct button:first-child {
+    background: #0D6DE8;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    flex-grow: 1;
+}
+.qbuttons-row.qcontanct button:last-child {
+    background: none;
+}
+
+.qcopmname {
+
+}
+.qcopmname > div:first-child {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.qcopmname > div:first-child img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.qcopmname > div:last-child {
+    padding-left: 20px;
+}
+.qcopmname > div:last-child p{
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+}
+.qcopmname > div:last-child button {
+    border: 1px solid #0D6DE8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: none;
+    width: 100%;
+    padding: 15px 0;
+    color: #0D6DE8;
+    font-weight: 600;
+}
+
+.qguaranty-info {
+    margin-top: 20px;
+}
+.qguaranty-info p {
+    color: #000000;
+    font-weight: 500;
+}
+.qguaranty-info span{
+    font-size: 18px;
+}
+.qguaranty-info .qgqwestion {
+    position: absolute;
+    right: -20px;
+    top: -5px;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #0D6DE8;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    user-select: none;
+}
+.qguaranty-info .qcustom-popover {
+    right: -130px;
+    top: -150px;
+}
+
+.qadvertisment {
+    overflow: hidden;
+    height: 222px;
+}
+.qadvertisment img {
+    border-radius: 8px;
+}
+
+    /*СТРАНИЦА ДЕТАЛИ ЛОТА КОНЕЦ*/
+
+/*СТРАНИЦА НОВОСТИ НАЧАЛО*/
+
+.qfeedpage {
+    margin-bottom: 50px;
+}
+.qfeedpage .qhomepage-news {
+    margin: 30px 0;
+}
+
+
+/*СТРАНИЦА НОВОСТИ КОНЕЦ*/
+
+
+/*СТРАНИЦА НОВОСТИ РАЗВЕРТКА FEEDDIDAIL НАЧАЛО*/
+
+.qfeedhead {
+    position: relative;
+    height: 400px;
+    background-image: url("../img/conference-room-picture-example.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.qfeedhead .wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.qfeedhead .wrapper .qnavgation {
+    margin-top: 0;
+}
+.qfeedhead .wrapper .qnavgation a {
+    color: #FFFFFF !important;
+}
+.qfeedhead .qfeedhead-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.qfeedhead .qfeedname {
+    max-width: 50%;
+    color: #FFFFFF;
+    padding: 60px 0 40px;
+}
+.qfeedhead .qfeedname h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+.qfeedhead .qfeedname p {
+    font-size: 18px;
+}
+.qfeedcontent {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.qfeedcontent p {
+    font-size: 18px;
+}
+.qfeedcontent p.qterm {
+    font-size: 24px;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-left: 10px solid #1A5BAF;
+}
+.qfeedcontent ul {
+    /*list-style: circle;*/
+}
+.qfeedcontent ul li {
+    color: #282828;
+    padding-left: 20px;
+    position: relative;
+}
+.qfeedcontent ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background: #1A5BAF;
+    border-radius: 50%;
+}
+
+.qfeedmidpart {
+    background: rgba(26, 91, 175, 0.03);
+    padding: 30px 0;
+}
+.qfeedmidpart > div p:first-child {
+    color: #1A5BAF;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.qfeedcontent .qbotp {
+    color: #1A5BAF;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.qfeedcontent .qfeedfoot {
+    border-top: 1px solid #DADADA;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.qfeedcontent .qfeedfoot p {
+    font-size: 18px;
+}
+.qfeedcontent .qfeedfoot a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1A5BAF;
+    border-radius: 3px;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+/*СТРАНИЦА НОВОСТИ РАЗВЕРТКА FEEDDIDAIL КОНЕЦ*/
+
+
+/*СТРАНИЦА МОИ ЛОТЫ mylots НАЧАЛО*/
+
+.qmylots {
+    margin: 20px auto 50px;
+}
+.qmylots .qmylots-head {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+.qmylots .qmylots-head {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+}
+.qmylots .qhomepage-lot .qhomepage-lot__photo {
+    max-width: 270px;
+}
+.qmylots .qhomepage-lot .qhomepage-lot__desc h2 {
+
+}
+.qmylots .qhomepage-lot .qhomepage-lot__desc .label-hidden-lot {
+    font-size: 18px;
+    color: #282828;
+    background: #F2F4F5;
+    border-radius: 8px;
+    padding: 1px 30px;
+    margin: 0 20px;
+}
+
+.qmylots .qhomepage-lot .qhomepage-lot__desc .qdeledit {
+
+}
+.qmylots .qhomepage-lot .qhomepage-lot__desc .qdeledit button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #282828;
+}
+.qmylots .qhomepage-lot .qhomepage-lot__desc .qdeledit span {
+    display: block;
+    border-right: 1px solid #282828;
+}
+
+
+    /*СТРАНИЦА МОИ ЛОТЫ mylots КОНЕЦ*/
+
+
+.qfavourites {
+    margin-bottom: 50px;
+    min-height: 400px;
+}
+.qfavourites h1 {
+    margin: 30px 0;
+    color: #000000;
+    font-size: 48px;
+}
+
+
+/*СТРАНИЦА ИСТОРИЯ СЧЕТОВ НАЧАЛО*/
+
+.qhistory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px auto 50px;
+}
+.qhistory .qhistory-content {
+    width: 100%;
+}
+.qhistory .qhistory-content .qhistory-head {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 20px 30px;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+}
+.qhistory .qhistory-content .qhistory-head p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+.qhistory .qhistory-content .qhistory-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 20px;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+}
+.qhistory .qhistory-content .qhistory-item:after {
+    content: '';
+    display: block;
+    width: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.qhistory .qhistory-content .qhistory-item.type-1:after {
+    background: #66B645;
+}
+
+.qhistory-item__top {
+    padding-bottom: 20px;
+}
+.qhistory-item .lotnumber {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1A5BAF;
+}
+.qhistory-item .lotdate {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #909090;
+}
+.qhistory-item .lotstatus {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #66B645;
+}
+.qhistory-item .lotname {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #282828;
+}
+.qhistory-item .lotprice {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #282828;
+}
+.qhistory-item .transaction-type {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #282828;
+}
+
+/*СТРАНИЦА ИСТОРИЯ СЧЕТОВ КОНЕЦ*/
+
+/*===============================================================================*/
+
+@media screen and (max-width: 1230px){
+    .qhomepage-partners .carousel-control-next {
+        right: 8px;
+        bottom: 30px;
+        top: unset;
+    }
+
+    .qhomepage-partners .carousel-control-prev {
+        left: 8px;
+        bottom: 30px;
+        top: unset;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .lotdetails-form__nameprice .qcurrency .qradios label {
+        padding-right: 50px;
+    }
+
+    .qglobalpagemenu a {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .qhomepage .qhomepage-stat .qhomepage-stat__col .qimg {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .lotdetails {
+        flex-direction: column;
+    }
+
+    .lotdetails-form__nameprice .qcurrency .qradios label {
+        padding-right: 30px;
+    }
+
+    .qmylots .qhomepage-lot .qhomepage-lot__desc .label-hidden-lot {
+        display: none;
+    }
+    .qmylots .qmylots-head {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #1A5BAF;
+        padding: 15px 20px;
+    }
+    .qglobalpagemenu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .qprofile {
+        flex-direction: column;
+    }
+    .qprofile .qprofile-content .qprofile-content__header {
+
+    }
+    .qhistory {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lotdetails, .qprofile {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .lotdetails-form, .qprofile-content {
+        box-shadow: none !important;
+    }
+    .qlotmain-desc > div p {
+        font-size: 16px;
+    }
+    .qhomepage {
+        margin-bottom: 18px;
+    }
+    .qhomepage .qhomepage-stat {
+        padding: 10px 20px;
+    }
+    .qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo {
+        margin-left: 0;
+    }
+    .qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo h3 {
+        color: #0D6DE8;
+        font-size: 18px;
+    }
+    .qhomepage .qhomepage-stat .qhomepage-stat__col .qinfo h4, h5 {
+        font-size: 16px !important;
+    }
+    .qhomepage-lot .qhomepage-lot__desc {
+        padding: 10px 20px 10px 10px;
+    }
+    .qhomepage-lot .qhomepage-lot__desc h2 {
+        font-size: 18px;
+    }
+    .qhomepage-lot .qhomepage-lot__photo {
+        max-width: 250px;
+    }
+    .qhomepage-lot .qhomepage-lot__photo span {
+        font-size: 10px;
+        width: 37px;
+        padding: 5px 0;
+    }
+    .qhomepage-lot .qhomepage-lot__desc .qdetailed-info {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .qhomepage-lot .qhomepage-lot__desc .qdetailed-info > div:first-child > h2 {
+        color: #1A5BAF;
+    }
+
+
+    .qprofile {
+        /*margin-bottom: 30px;*/
+    }
+    .qprofile .qprofile-content .qprofile-content__header {
+        margin-bottom: 0;
+    }
+    .qprofile .qprofile-content .qprofile-content__header .qlogoutbtn {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        z-index: 50;
+    }
+    .qprofile .qprofile-content .qprofile-content__header .qlogoutbtn button {
+        font-size: 16px;
+    }
+    .qprofile .qprofile-content .qprofile-content__header .qlogoutbtn button img {
+        width: 16px;
+        height: 16px;
+    }
+    .qprofile .qprofile-content .qprofile-content__maininfo .qphoto {
+        margin-bottom: 80px;
+    }
+    .qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:first-child {
+        width: 70px;
+        height: 70px;
+    }
+    .qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:first-child img {
+        /*width: 21px !important;*/
+        /*height: 21px !important;*/
+    }
+    .qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child > div:last-child {
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .qprofile .qprofile-content .qprofile-content__maininfo .qphoto > div:last-child p {
+        width: 81px;
+        font-size: 14px;
+    }
+    .qprofile .qprofile-content .qprofile-content__footer button:last-child {
+        background: #F5F5F5;
+        border-radius: 8px;
+        width: 53px;
+        height: 45px;
+        margin-left: 20px;
+    }
+
+    .qbuttons-row {
+        background: #FFFFFF;
+        /*padding: 10px 0 !important;*/
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .qbuttons-row div:first-child button {
+        padding: 0 15px;
+    }
+    .qbuttons-row div:last-child button {
+        color: #0D6DE8;
+    }
+        /*.qbuttons-row button {*/
+    /*    !*max-width: 167px;*!*/
+    /*    height: 40px;*/
+    /*    line-height: 40px;*/
+    /*    font-size: 16px;*/
+    /*}*/
+    .qfeedpage {
+        padding: 0;
+    }
+    .qfeedpage .qhomepage-news .qhomepage-news__items > div{
+        margin: 20px 16px 0 !important;
+        max-width: 100%;
+    }
+
+    .qfeedhead {
+        height: 240px;
+    }
+    .qfeedhead .qfeedhead-mask {
+        width: 70%;
+    }
+    .qfeedhead .qfeedname {
+        max-width: 70%;
+    }
+    .qfeedhead .qfeedname h1 {
+        font-size: 24px;
+    }
+    .qfeedhead .qfeedname p {
+        font-size: 16px;
+    }
+    .qfeedcontent p {
+        font-size: 16px;
+    }
+    .qfeedcontent p.qterm {
+        font-size: 20px;
+    }
+    .qhomepage-news .qhomepage-news__items .qimgpart {
+        max-height: unset;
+    }
+    .qmylots {
+        margin-bottom: 20px !important;
+    }
+    .qfavourites h1 {
+        font-size: 30px;
+    }
+
+    .qhistory {
+        margin-bottom: 30px !important;
+    }
+    .qhistory .qhistory-content .qhistory-item.type-1:after {
+        background: none;
+    }
+    .qhistory-item__bot {
+        margin-top: 0 !important;
+    }
+    .qhistory-item .lotname {
+        color: #1A5BAF;
+    }
+    .qglobalpageselect select {
+        color: #1A5BAF;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .qhomepage-lot .qhomepage-lot__photo {
+        max-width: 95px !important;
+        /*height: 91px;*/
+    }
+    .qlotfullinfo .qlotfullinfo-carousel {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
